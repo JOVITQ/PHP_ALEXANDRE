@@ -11,8 +11,10 @@ $state->bindParam(':password',$password);
 $state->execute();
 
 }
-else {
-echo "Your information is incomplete";
-}
 
+else
+(!empty($login) && !empty($password)){
+
+echo "erreur";
+}
 ?>
